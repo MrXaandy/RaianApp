@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="raianApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+    <title>RaianApp</title>
+</head>
+<body ng-controller="RaianAppController">
+    <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo center">RaianApp</a>       
+        </div>
+    </nav>
+    <!--Cadastros-->
+    <form>
+        <p class="info-header">Seja bem-vindo, para iniciar cadastre um curso!</p>
+        <br>
+        <label class="input-header" for="name">Nome do curso</label>
+        <br>
+        <input id="name" name="name" type="text" ng-model="course.name" required/>
+        <br>
+        <label class="input-header" for="total-class">Total de deciplinas na semana</label>
+        <br>
+        <input id="total-class" name="total-class" type="text" ng-model="course.totalClass" required/>
+        <br>
+        <label class="input-header" for="day-class">Total de aulas por dia</label>
+        <br>
+        <input class="input-field" id="day-class" name="day-class" type="text" ng-model="course.dayClass" required/>
+        <br>
+        <button class="btn waves-effect waves-light red" ng-click="salvar(course)"> Próximo passo ></button>
+        <br>
+    </form>
+
+    <!--Tabela de cursos-->
+    <!--<table>
+        <h1>Tabela de cursos</h1>
+        <thead>
+            <tr>
+                <td class="form-header">ID do curso</td>
+                <td class="form-header">Nome do Curso</td>
+                <td class="form-header">Total de disciplinas na semana</td>
+                <td class="form-header">Total de aulas por dia</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </thead>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="course in courses track by $index">
+                <td class="table-body">{{course.id}}</td>
+                <td class="table-body">{{course.name}}</td>
+                <td class="table-body">{{course.totalClass}}</td>
+                <td class="table-body">{{course.dayClass}}</td>
+                <td><a href="" ng-click="editar(course)">[Editar]</a></td>
+                <td><a href="" ng-click="excluir(course)">[Excluir]</a></td>
+            </tr>
+        </tbody>
+    </table>-->
+    <script>
+    
+    </script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html> 
