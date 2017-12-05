@@ -1,0 +1,42 @@
+<form name="cadastre" class="container">
+    <div class="row">
+        <div class="col s6 offset-s3">
+            <div class="row">
+                <div class="col s12">
+                    <label class="input-header" for="name">Curso</label>
+                    <br>
+                    <input required placeholder="Curso" id="professor-name" name="professor-name" type="text" ng-model="discipline.courseId"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <label class="input-header" for="name">Nome da disciplina</label>
+                    <br>
+                    <input required placeholder="Nome da disciplina" id="name" name="name" type="text" ng-model="discipline.name"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <label class="input-header" for="name">Professor</label>
+                    <br>
+                    <input required placeholder="Nome do professor" id="professor-name" name="professor-name" type="text" ng-model="discipline.professorName"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s6">
+                    <label class="input-header" for="name">Total de aulas no semestre</label>
+                    <br>
+                    <input required placeholder="Total de aulas" id="class-semester" name="class-semester" type="text" ng-model="discipline.totalClass"/>
+                </div>
+                <div class="col s6">
+                    <label class="input-header" for="name">Limite de faltas</label>
+                    <br>
+                    <input required placeholder="Limite de faltas" id="absence-limit" name="absence-limit" type="text" ng-model="discipline.absenseLimit"/>
+                </div>
+            </div>
+            <div class="row">
+                <button class="btn waves-effect waves-light blue" type="button" ng-disabled="cadastre.$invalid" ng-click="saveDiscipline(discipline)">Cadastrar</button> 
+            </div>
+        </div>
+    </div>
+</form>

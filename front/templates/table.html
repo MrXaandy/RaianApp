@@ -1,0 +1,82 @@
+<!--<div class="container">
+    <table class="bordered">
+        <thead>
+            <tr>
+                <th>Nome do Curso</th>
+                <th>Dias da semana</th>
+                <th>Aulas por dia</th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="course in courses track by $index">
+                <td>{{course.name}}</td>
+                <td>{{course.totalClass}}</td>
+                <td>{{course.dayClass}}</td>
+                <td><a class="waves-effect waves-light btn blue" href="#!cadastre-course{{course.id}}"><i class="small material-icons">create</i></a></td>
+                <td><a class="waves-effect waves-light btn green" href="#!cadastre-discipline"><i class="small material-icons">add</i></a></td>
+                <td><a class="waves-effect waves-light btn red" href="" ng-click="deleteCourse(course)"><i class="small material-icons">clear</i></a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="container">    
+    <table class="bordered">
+        <thead>
+            <tr>
+                <th>Nome da disciplina</th>
+                <th>Nome do professor</th>
+                <th>Limite de faltas</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="discipline in disciplines track by $index">
+                <td>{{discipline.name}}</td>
+                <td>{{discipline.professorName}}</td>
+                <td>{{discipline.absenseLimit}}</td>
+                <td><a class="waves-effect waves-light btn blue" href="#!cadastre-discipline{{discipline.id}}"><i class="small material-icons">create</i></a></td>
+                <td><a class="waves-effect waves-light btn red" href="" ng-click="deleteDiscipline(discipline)"><i class="small material-icons">clear</i></a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>-->
+    
+
+<div class="container">
+    <br /><br />
+  <a class="waves-effect waves-light btn" onClick="expandAll();"><i class="material-icons left">fullscreen</i>Expandir</a>
+  <a class="waves-effect waves-light btn" onClick="collapseAll();"><i class="material-icons left">fullscreen_exit</i>Diminuir</a>
+    <ul class="collapsible" data-collapsible="expandable">
+        <li>
+            <span class="collapsible-header">Cursos</span>
+            <div class="collapsible-body">  
+                <table class="bordered">
+                    <thead>
+                        <tr>
+                            <th>Nome do Curso</th>
+                            <th>Dias da semana</th>
+                            <th>Aulas por dia</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="course in courses track by $index">
+                            <td>{{course.name}}</td>
+                            <td>{{course.totalClass}}</td>
+                            <td>{{course.dayClass}}</td>
+                            <td><a class="waves-effect waves-light btn blue" href="#!cadastre-course{{course.id}}"><i class="small material-icons">create</i></a></td>
+                            <td><a class="waves-effect waves-light btn green" href="#!cadastre-discipline"><i class="small material-icons">add</i></a></td>
+                            <td><a class="waves-effect waves-light btn red" href="" ng-click="deleteCourse(course)"><i class="small material-icons">clear</i></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+          </div>
+        </li>
+    </ul>
+</div>
