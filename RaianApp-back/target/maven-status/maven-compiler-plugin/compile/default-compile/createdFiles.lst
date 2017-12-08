@@ -1,0 +1,4 @@
+courses\CoursesService.class
+courses\Course.class
+config\CrossOriginFilter.class
+config\ApplicationConfig.class
